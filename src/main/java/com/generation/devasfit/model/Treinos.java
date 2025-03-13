@@ -29,6 +29,10 @@ public class Treinos {
 	@ManyToOne
 	@JsonIgnoreProperties("Treinos")
 	private Categoria categoria;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("Treinos")
+	private Usuario usuario;
 
 	public Categoria getCategoria() {
 		return categoria;
